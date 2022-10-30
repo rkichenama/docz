@@ -7448,7 +7448,7 @@ component-emitter@1.2.1:
   resolved "https://registry.npmjs.org/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
   integrity sha1-E3kY1teCg/ffemt8WmPhQOaUJeY=
 
-component-emitter@^1.2.1:
+component-emitter@^1.2.1, component-emitter@~1.3.0:
   version "1.3.0"
   resolved "https://registry.npmjs.org/component-emitter/-/component-emitter-1.3.0.tgz#16e4070fba8ae29b679f2215853ee181ab2eabc0"
   integrity sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0/yYnSin6Q/rD3mOutHvUrCAhJub3r90uNb+SESBuE0QYoB90YdfatsRg==
@@ -8832,6 +8832,29 @@ docz-core@^1.2.0:
     ws "^7.0.0"
     yargs "^13.2.2"
 
+docz-rollup@^2.1.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/docz-rollup/-/docz-rollup-2.4.0.tgz#5a11805e490623f89fa72db60bda145d2ed5b350"
+  integrity sha512-z9tdzw97sXlXTuoL0lz6IYFRNAvJcvXzLlhKWVawYGNxZqxfoB7yoM87YASGGo8dbzhrSKpoQyrEg2qR3b8ZcA==
+  dependencies:
+    chalk "^2.4.2"
+    figures "3.0.0"
+    filesize "^4.1.2"
+    fs-extra "^8.1.0"
+    gzip-size "^5.1.1"
+    lodash "^4.17.14"
+    log-update "^3.2.0"
+    rollup "^1.17.0"
+    rollup-plugin-alias "^1.5.2"
+    rollup-plugin-babel "^4.3.3"
+    rollup-plugin-commonjs "^10.0.1"
+    rollup-plugin-json "^4.0.0"
+    rollup-plugin-node-resolve "^5.2.0"
+    rollup-plugin-peer-deps-external "^2.2.0"
+    rollup-plugin-postcss "^2.0.3"
+    rollup-plugin-progress "^1.1.2"
+    rollup-plugin-typescript2 "^0.22.0"
+
 docz-utils@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/docz-utils/-/docz-utils-1.2.0.tgz#a7e9f3f56217f17fbc0699b5f4cf4323a53f3d13"
@@ -9313,6 +9336,31 @@ escodegen@^1.8.1, escodegen@^1.9.1:
     optionator "^0.8.1"
   optionalDependencies:
     source-map "~0.6.1"
+
+eslint-config-docz-js@^2.1.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-docz-js/-/eslint-config-docz-js-2.4.0.tgz#fb41ecb9f731c63b53a2c206a04864cbf821f56d"
+  integrity sha512-jN6g9YXgBr29mVn+ag8DoVIX57aePuM/YChj08G7OU6Sk39hvn4s0ileInAnDtZicA31B+0sPBmHs0NtqDPcrw==
+  dependencies:
+    babel-eslint "^10.0.2"
+    eslint "^6.5.1"
+    eslint-config-prettier "^5.0.0"
+    eslint-plugin-mdx "^1.6.1"
+    eslint-plugin-prettier "^3.1.0"
+    eslint-plugin-react "^7.13.0"
+
+eslint-config-docz-ts@^2.1.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-docz-ts/-/eslint-config-docz-ts-2.4.0.tgz#3a69e7f97c5140ca680b83bcef9e2ae4bd42bf76"
+  integrity sha512-idkvwXH8nU0WtRusMw0FAlFI1TGXmVYus9FZGv996mQsaKS6mQDJPBP3au1Hyd/qYODD0KRTRLPboV1TyRYH7Q==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^1.12.0"
+    "@typescript-eslint/parser" "^1.12.0"
+    eslint "^6.5.1"
+    eslint-config-prettier "^5.0.0"
+    eslint-plugin-mdx "^1.6.1"
+    eslint-plugin-prettier "^3.1.0"
+    eslint-plugin-react "^7.13.0"
 
 eslint-config-kentcdodds@^14.3.2:
   version "14.3.2"
@@ -12880,8 +12928,8 @@ isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
 
 isarray@2.0.1:
   version "2.0.1"
-  resolved "https://registry.npmjs.org/isarray/-/isarray-2.0.1.tgz#a37d94ed9cda2d59865c9f76fe596ee1f338741e"
-  integrity sha1-o32U7ZzaLVmGXJ92/llu4fM4dB4=
+  resolved "https://registry.yarnpkg.com/isarray/-/isarray-2.0.1.tgz#a37d94ed9cda2d59865c9f76fe596ee1f338741e"
+  integrity sha512-c2cu3UxbI+b6kR3fy0nRnAhodsvR9dx7U5+znCOzdj6IfP3upFURTr0Xl5BlQZNKZjEtxrmVyfSdeE3O57smoQ==
 
 isexe@^2.0.0:
   version "2.0.0"
@@ -15018,8 +15066,8 @@ move-file@^1.1.0:
 
 ms@2.0.0:
   version "2.0.0"
-  resolved "https://registry.npmjs.org/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
-  integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
+  integrity sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==
 
 ms@2.1.1:
   version "2.1.1"
@@ -18011,6 +18059,16 @@ remark-docz@^1.2.0:
     unist-util-remove "^1.0.1"
     unist-util-visit "^1.4.0"
 
+remark-docz@^2.1.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/remark-docz/-/remark-docz-2.4.0.tgz#fc493692be3f8dbf6112af3680a9b2b3bd26585a"
+  integrity sha512-S4IFKQTZ3Nzoy5VWp+IwHpHEuCWlELKFAv753JJrzCxIStc3xLGgjAVwp820XuTcuHMMqzEaGqvcIT03Y8vuvQ==
+  dependencies:
+    "@babel/generator" "^7.5.5"
+    "@babel/types" "^7.5.5"
+    unist-util-remove "^1.0.3"
+    unist-util-visit "^1.4.1"
+
 remark-frontmatter@^1.3.1, remark-frontmatter@^1.3.2:
   version "1.3.2"
   resolved "https://registry.npmjs.org/remark-frontmatter/-/remark-frontmatter-1.3.2.tgz#91d9684319cd1b96cc3d9d901f10a978f39c752d"
@@ -19176,11 +19234,11 @@ socket.io-client@2.2.0:
     to-array "0.1.4"
 
 socket.io-parser@~3.3.0:
-  version "3.3.0"
-  resolved "https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-3.3.0.tgz#2b52a96a509fdf31440ba40fed6094c7d4f1262f"
-  integrity sha512-hczmV6bDgdaEbVqhAeVMM/jfUfzuEZHsQg6eOmLgJht6G3mPKMxYm75w2+qhAQZ+4X+1+ATZ+QFKeOZD5riHng==
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/socket.io-parser/-/socket.io-parser-3.3.2.tgz#ef872009d0adcf704f2fbe830191a14752ad50b6"
+  integrity sha512-FJvDBuOALxdCI9qwRrO/Rfp9yfndRtc1jSgVgV8FDraihmSP/MLGD5PEuJrNfjALvcQ+vMDM/33AWOYP/JSjDg==
   dependencies:
-    component-emitter "1.2.1"
+    component-emitter "~1.3.0"
     debug "~3.1.0"
     isarray "2.0.1"
 
